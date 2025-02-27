@@ -4,6 +4,8 @@ a blog post series to my homelab
 
 ![blog post logo](storage/d23d82a2.png)
 
+check here for [Introduction to Traefik - Part Two](https://github.com/ebal/traefik-intro-02)
+
 ## Part One
 
 In this blog post, I will start by walking you through the process of setting up [Traefik](https://doc.traefik.io/traefik/) as a reverse proxy for your homelab. My setup involves using a virtual machine connected via a point-to-point VPN to a cloud VPS, along with several Docker containers on my homelab for various tasks and learning purposes. The goal is to expose only Traefik to the internet, which will then provide access to my internal homelab. For certain applications, I also use Tailscale, which I prefer not to expose directly to the internet. In short, I have a complex internal homelab setup, and in this post, we’ll simplify it!
