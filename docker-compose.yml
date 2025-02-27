@@ -1,0 +1,18 @@
+---
+services:
+  traefik:
+    image: traefik:v3.3
+    container_name: traefik
+    hostname: traefik
+    env_file:
+      - path: ./.env
+        required: true
+    restart: unless-stopped
+    ports:
+      # The Web UI (enabled by --api.insecure=true)
+      - 8080:8080
+      # The HTTP port
+      - 80:80
+    volumes:
+      - ./traefik:/etc/traefik
+      - /var/run/docker.sock:/var/run/docker.sock:ro
