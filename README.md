@@ -29,10 +29,6 @@ Using an **.env** file in a Docker Compose configuration is important for severa
 eg. **.env**
 
 ```bash
-# This is my user id
-PUID=1001
-# This is my docker group id
-PGID=142
 UMASK="002"
 TZ="Europe/Athens"
 DNS="88.198.92.222"

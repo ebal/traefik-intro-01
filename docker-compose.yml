@@ -5,7 +5,7 @@ services:
     container_name: traefik
     hostname: traefik
     env_file:
-      - path: ./.env
+      - path: ./default.env
         required: true
     restart: unless-stopped
     ports:
